@@ -33,11 +33,8 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun MainScreen(title: String) {
-  Column(horizontalAlignment = Alignment.CenterHorizontally) {
-    Row(
-      modifier = Modifier.padding(8.dp),
-      verticalAlignment = Alignment.CenterVertically
-    ) {
+  Column {
+    Row(modifier = Modifier.padding(8.dp)) {
       Image(
         painter = painterResource(id = R.drawable.devfest),
         contentDescription = "DevFest Logo",
